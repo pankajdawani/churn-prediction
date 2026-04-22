@@ -116,8 +116,8 @@ def predict_batch(records: List[Dict[str, Any]], artifact_path: str = "models/ar
 
 def _get_risk_tier(probability: float) -> str:
     """Map churn probability to a human-readable risk tier."""
-    if probability >= 0.65:
+    if probability >= 0.45:
         return "High"
-    elif probability >= 0.35:
+    elif probability >= 0.25:
         return "Medium"
     return "Low"

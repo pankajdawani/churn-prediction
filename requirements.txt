@@ -1,0 +1,30 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Churn Prediction Project — Python Dependencies
+# Install with: pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Core data science
+pandas
+numpy
+scikit-learn
+
+# Imbalanced data (SMOTE)
+imbalanced-learn
+
+# Model serialization
+joblib
+
+# Visualization
+matplotlib
+
+# API framework
+fastapi
+uvicorn
+pydantic
+
+# Config file parsing
+pyyaml
+
+# Jupyter notebooks
+jupyter
+ipykernel

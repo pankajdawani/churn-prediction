@@ -24,6 +24,8 @@ from src.features.build_features import (
 )
 from src.utils.logger import get_logger
 from src.utils.config_loader import load_config
+from xgboost import XGBClassifier
+
 
 logger = get_logger(__name__)
 
@@ -84,6 +86,7 @@ def train(config_path: str = "configs/config.yaml") -> dict:
     model_pipeline = ImbPipeline([
         ("preprocessor", preprocessor),
         ("smote", SMOTE(random_state=data_cfg["random_state"])),
+        #("classifier", XGBClassifier(**rf_params)),
         ("classifier", RandomForestClassifier(**rf_params)),
     ])
 

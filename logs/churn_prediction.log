@@ -1,0 +1,204 @@
+2026-04-22 20:54:02 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 20:54:02 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 20:54:02 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 20:54:02 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 20:54:02 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 20:54:02 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 20:54:02 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 20:54:05 | INFO     | __main__ | CV ROC-AUC : 0.7031 ± 0.0124
+CV Avg-Prec: 0.3118 ± 0.0167
+CV F1      : 0.1107 ± 0.0129
+2026-04-22 20:54:05 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 20:54:06 | INFO     | __main__ | 
+=======================================================
+2026-04-22 20:54:06 | INFO     | __main__ | Hold-out ROC-AUC         : 0.7187
+2026-04-22 20:54:06 | INFO     | __main__ | Hold-out Avg Precision   : 0.3170
+2026-04-22 20:54:06 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.82      0.98      0.89       920
+       Churn       0.33      0.05      0.08       206
+
+    accuracy                           0.81      1126
+   macro avg       0.58      0.51      0.49      1126
+weighted avg       0.73      0.81      0.75      1126
+
+2026-04-22 20:54:07 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 20:54:07 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 20:54:07 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
+2026-04-22 20:58:54 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 20:58:55 | INFO     | src.models.predict | Model loaded from models/artifacts/churn_model.joblib
+2026-04-22 20:58:55 | INFO     | src.main | Model pre-loaded successfully on startup.
+2026-04-22 21:00:58 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:00:58 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:00:58 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:00:58 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:00:58 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:00:58 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:00:58 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 21:01:02 | INFO     | __main__ | CV ROC-AUC : 0.7031 ± 0.0124
+CV Avg-Prec: 0.3118 ± 0.0167
+CV F1      : 0.1107 ± 0.0129
+2026-04-22 21:01:02 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 21:01:03 | INFO     | __main__ | 
+=======================================================
+2026-04-22 21:01:03 | INFO     | __main__ | Hold-out ROC-AUC         : 0.7187
+2026-04-22 21:01:03 | INFO     | __main__ | Hold-out Avg Precision   : 0.3170
+2026-04-22 21:01:03 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.82      0.98      0.89       920
+       Churn       0.33      0.05      0.08       206
+
+    accuracy                           0.81      1126
+   macro avg       0.58      0.51      0.49      1126
+weighted avg       0.73      0.81      0.75      1126
+
+2026-04-22 21:01:03 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 21:01:03 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 21:01:03 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
+2026-04-22 21:05:16 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:05:16 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:05:16 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:05:16 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:05:16 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:05:16 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:05:16 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 21:05:20 | INFO     | __main__ | CV ROC-AUC : 0.7050 ± 0.0088
+CV Avg-Prec: 0.3199 ± 0.0149
+CV F1      : 0.2476 ± 0.0359
+2026-04-22 21:05:20 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 21:05:21 | INFO     | __main__ | 
+=======================================================
+2026-04-22 21:05:21 | INFO     | __main__ | Hold-out ROC-AUC         : 0.7270
+2026-04-22 21:05:21 | INFO     | __main__ | Hold-out Avg Precision   : 0.3285
+2026-04-22 21:05:21 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.84      0.92      0.88       920
+       Churn       0.35      0.19      0.25       206
+
+    accuracy                           0.79      1126
+   macro avg       0.60      0.56      0.56      1126
+weighted avg       0.75      0.79      0.76      1126
+
+2026-04-22 21:05:21 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 21:05:21 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 21:05:21 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
+2026-04-22 21:10:15 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:10:15 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:10:15 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:10:15 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:10:15 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:10:15 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:10:15 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 21:10:19 | INFO     | __main__ | CV ROC-AUC : 0.7067 ± 0.0065
+CV Avg-Prec: 0.3210 ± 0.0137
+CV F1      : 0.2363 ± 0.0373
+2026-04-22 21:10:19 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 21:10:20 | INFO     | __main__ | 
+=======================================================
+2026-04-22 21:10:20 | INFO     | __main__ | Hold-out ROC-AUC         : 0.7270
+2026-04-22 21:10:20 | INFO     | __main__ | Hold-out Avg Precision   : 0.3282
+2026-04-22 21:10:20 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.83      0.92      0.88       920
+       Churn       0.35      0.18      0.24       206
+
+    accuracy                           0.79      1126
+   macro avg       0.59      0.55      0.56      1126
+weighted avg       0.75      0.79      0.76      1126
+
+2026-04-22 21:10:20 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 21:10:20 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 21:10:20 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
+2026-04-22 21:14:19 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:14:19 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:14:19 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:14:19 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:14:19 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:14:19 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:15:26 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:15:26 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:15:26 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:15:26 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:15:26 | INFO     | src.features.build_features | Features shape: (5630, 21), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:15:26 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:15:26 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 21:15:29 | INFO     | __main__ | CV ROC-AUC : 0.6753 ± 0.0147
+CV Avg-Prec: 0.2857 ± 0.0144
+CV F1      : 0.2574 ± 0.0258
+2026-04-22 21:15:29 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 21:15:30 | INFO     | __main__ | 
+=======================================================
+2026-04-22 21:15:30 | INFO     | __main__ | Hold-out ROC-AUC         : 0.6965
+2026-04-22 21:15:30 | INFO     | __main__ | Hold-out Avg Precision   : 0.3057
+2026-04-22 21:15:30 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.84      0.89      0.87       920
+       Churn       0.34      0.24      0.28       206
+
+    accuracy                           0.77      1126
+   macro avg       0.59      0.57      0.57      1126
+weighted avg       0.75      0.77      0.76      1126
+
+2026-04-22 21:15:31 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 21:15:31 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 21:15:31 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
+2026-04-22 21:21:33 | INFO     | src.utils.config_loader | Config loaded from configs/config.yaml
+2026-04-22 21:21:33 | INFO     | src.features.build_features | Loading raw data from: data/raw/ecommerce_churn.csv
+2026-04-22 21:21:33 | INFO     | src.features.build_features | Loaded 5,630 rows × 19 columns
+2026-04-22 21:21:33 | INFO     | src.features.build_features | Feature engineering complete. New features: recency_engagement, coupon_order_ratio, high_value_flag, multi_device_flag
+2026-04-22 21:21:33 | INFO     | src.features.build_features | Features shape: (5630, 17), Target distribution:
+churn
+0    4601
+1    1029
+2026-04-22 21:21:33 | INFO     | __main__ | Train: 4,504 | Test: 1,126
+2026-04-22 21:21:33 | INFO     | __main__ | Running 5-fold stratified cross-validation...
+2026-04-22 21:21:36 | INFO     | __main__ | CV ROC-AUC : 0.7043 ± 0.0053
+CV Avg-Prec: 0.3210 ± 0.0087
+CV F1      : 0.3480 ± 0.0089
+2026-04-22 21:21:36 | INFO     | __main__ | Fitting final model on full training set...
+2026-04-22 21:21:37 | INFO     | __main__ | 
+=======================================================
+2026-04-22 21:21:37 | INFO     | __main__ | Hold-out ROC-AUC         : 0.7318
+2026-04-22 21:21:37 | INFO     | __main__ | Hold-out Avg Precision   : 0.3451
+2026-04-22 21:21:37 | INFO     | __main__ | 
+Classification Report:
+              precision    recall  f1-score   support
+
+    No Churn       0.87      0.83      0.85       920
+       Churn       0.36      0.44      0.40       206
+
+    accuracy                           0.76      1126
+   macro avg       0.61      0.63      0.62      1126
+weighted avg       0.78      0.76      0.76      1126
+
+2026-04-22 21:21:38 | INFO     | __main__ | Confusion matrix saved → models/artifacts/confusion_matrix.png
+2026-04-22 21:21:38 | INFO     | __main__ | Feature importance plot saved → models/artifacts/feature_importance.png
+2026-04-22 21:21:38 | INFO     | __main__ | Model saved → models/artifacts/churn_model.joblib
